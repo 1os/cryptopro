@@ -34,86 +34,87 @@ parts:
       - gcr
   lsb-cprocsp-base:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-base_5.0.12415-7_all.deb
-      source-checksum: md5/5ae62826831327729d740189c611b944
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-base_5.0.12415-4_all.deb
-      source-checksum: md5/cc59dfd0a5bd026892dd124d6cd4d1a1
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-base_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-base_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/5ae62826831327729d740189c611b944
+      else: md5/cc59dfd0a5bd026892dd124d6cd4d1a1
   lsb-cprocsp-rdr:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-rdr_5.0.12415-7_all.deb
-      source-checksum: md5/8ea71189872efd8e315d494748345c93
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-rdr-64_5.0.12415-4_all.deb
-      source-checksum: md5/72ad85e6983a1fe595ffe608c8c79cef
+    source: 
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-rdr_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-rdr-64_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/8ea71189872efd8e315d494748345c93
+      else: md5/72ad85e6983a1fe595ffe608c8c79cef
   lsb-cprocsp-kc1:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-kc1_5.0.12415-7_all.deb
-      source-checksum: md5/9cbf050099362dfe9e33280356bde59f
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-kc1-64_5.0.12415-4_all.deb
-      source-checksum: md5/638184b916b2991558a1e35613043dd3
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-kc1_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-kc1-64_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/9cbf050099362dfe9e33280356bde59f
+      else: md5/638184b916b2991558a1e35613043dd3
   lsb-cprocsp-capilite:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-capilite_5.0.12415-7_all.deb
-      source-checksum: md5/1da4a57fa4a39b32698ab4e5a623a96a
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-capilite-64_5.0.12415-4_all.deb
-      source-checksum: md5/1696382a18c48366b651a842f6d72cc4
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-capilite_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-capilite-64_5.0.12415-4_all.deb
+    source-checksum: 
+      on armhf: md5/1da4a57fa4a39b32698ab4e5a623a96a
+      else: md5/1696382a18c48366b651a842f6d72cc4
   cprocsp-curl:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-curl_5.0.12415-7_all.deb
-      source-checksum: md5/90e74e5b52ecf642e79ea4e31c03fb22
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/cprocsp-curl-64_5.0.12415-4_all.deb
-      source-checksum: md5/faa483470d81c123f0004dee57be5483
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-curl_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/cprocsp-curl-64_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/90e74e5b52ecf642e79ea4e31c03fb22
+      else: md5/faa483470d81c123f0004dee57be5483
   lsb-cprocsp-ca-certs:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-ca-certs_5.0.12415-7_all.deb
-      source-checksum: md5/3864a6a6a331cab949df5aa7b3a2db24
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-ca-certs_5.0.12415-4_all.deb
-      source-checksum: md5/8fda00399c7a3e828aa7a895f7ac68a5
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/lsb-cprocsp-ca-certs_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/lsb-cprocsp-ca-certs_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/3864a6a6a331cab949df5aa7b3a2db24
+      else: md5/8fda00399c7a3e828aa7a895f7ac68a5
   cprocsp-rdr-pcsc:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-rdr-pcsc_5.0.12415-7_all.deb
-      source-checksum: md5/b9484695fe18a5e3179d98d53019133e
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/cprocsp-rdr-pcsc-64_5.0.12415-4_all.deb
-      source-checksum: md5/3a1255c5da306ce01c8e72d15267b546
+    source: 
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-rdr-pcsc_5.0.12415-7_all.deb
+      else:  https://cryptopro.blob.core.windows.net/arm64/cprocsp-rdr-pcsc-64_5.0.12415-4_all.deb
+    source-checksum: 
+      on armhf: md5/b9484695fe18a5e3179d98d53019133e
+      else: md5/3a1255c5da306ce01c8e72d15267b546
   cprocsp-rdr-jacarta:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-rdr-jacarta_5.0.12415-7_all.deb
-      source-checksum: md5/ddcb1e5350cd24ea339fb8eb4b14178b
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/cprocsp-rdr-jacarta-64_5.0.12415-4_all.deb
-      source-checksum: md5/8f1cb5151ea3a46bf526ea5e451e283c
+    source: 
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-rdr-jacarta_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/cprocsp-rdr-jacarta-64_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/ddcb1e5350cd24ea339fb8eb4b14178b
+      else: md5/8f1cb5151ea3a46bf526ea5e451e283c
   cprocsp-rdr-rutoken:
     plugin: dump
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-rdr-rutoken_5.0.12415-7_all.deb
-      source-checksum: md5/60ae0adb449118c39203d39b3be7c1c5
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/cprocsp-rdr-rutoken-64_5.0.12415-4_all.deb
-      source-checksum: md5/bf9df1d2c1092409ddae8db2579d1afb
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-rdr-rutoken_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/cprocsp-rdr-rutoken-64_5.0.12415-4_all.deb
+    source-checksum:
+      on armhf: md5/60ae0adb449118c39203d39b3be7c1c5
+      else: md5/bf9df1d2c1092409ddae8db2579d1afb
   cprocsp-stunnel:
     plugin: dump 
-    on armhf:
-      source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-stunnel_5.0.12415-7_all.deb
-      source-checksum: md5/b0d25294fa49c64b6eb945f26c14e55d
-    else:
-      source: https://cryptopro.blob.core.windows.net/arm64/cprocsp-stunnel-64_5.0.12415-4_all.deb
-      source-checksum: md5/61c7b7f13e4fa536eb238283b6624b6a
+    source:
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-stunnel_5.0.12415-7_all.deb
+      else: https://cryptopro.blob.core.windows.net/arm64/cprocsp-stunnel-64_5.0.12415-4_all.deb
+    source-checksum: 
+      on armhf: md5/b0d25294fa49c64b6eb945f26c14e55d
+      else: md5/61c7b7f13e4fa536eb238283b6624b6a
   cprocsp-compat:
-    on armhf:
-      plugin: dump 
-        source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-compat-armhf_1.0.0-1_all.deb
-        source-checksum: md5/9aec5f737adff3b853051e7294b9f954
+    plugin: dump 
+    source: 
+      on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-compat-armhf_1.0.0-1_all.deb
+    source-checksum: 
+      on armhf: md5/9aec5f737adff3b853051e7294b9f954
