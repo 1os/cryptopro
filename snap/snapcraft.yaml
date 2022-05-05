@@ -116,5 +116,5 @@ parts:
     plugin: dump 
     source: 
       on armhf: https://cryptopro.blob.core.windows.net/armhf/cprocsp-compat-armhf_1.0.0-1_all.deb
-    source-checksum: 
+    source-checksum:
       on armhf: md5/9aec5f737adff3b853051e7294b9f954
