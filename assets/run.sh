@@ -1,10 +1,14 @@
 #!/bin/sh
 
-modprobe usbip-core
-modprobe usbip-host
-modprobe vhci-hcd
+# modprobe usbip-core
+# modprobe usbip-host
+# modprobe vhci-hcd
 
-$SNAP/usr/bin/usbipd -D
-$SNAP/usr/bin/usbip list -l
+# $SNAP/usr/bin/usbipd -D
+# $SNAP/usr/bin/usbip list -l
 
-$SNAP/usr/bin/usbip bind -b $(snapctl get busid)
+# $SNAP/usr/bin/usbip bind -b $(snapctl get busid)
+
+sudo $SNAP/opt/cprocsp/bin/$SNAP_ARCH/csptestf -absorb -certs
+
+sudo $SNAP/opt/cprocsp/bin/$SNAP_ARCH/certmgr -list
