@@ -113,7 +113,7 @@ parts:
       source: https://cryptopro.blob.core.windows.net/arm64/cprocsp-stunnel-64_5.0.12415-4_all.deb
       source-checksum: md5/61c7b7f13e4fa536eb238283b6624b6a
   cprocsp-compat:
+    plugin: dump 
     on armhf:
-      plugin: dump 
-        source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-compat-armhf_1.0.0-1_all.deb
-        source-checksum: md5/9aec5f737adff3b853051e7294b9f954
+      source: https://cryptopro.blob.core.windows.net/armhf/cprocsp-compat-armhf_1.0.0-1_all.deb
+      source-checksum: md5/9aec5f737adff3b853051e7294b9f954
