@@ -4,14 +4,20 @@ base: core20
 architectures:
   - build-on: armhf
   - build-on: arm64
-version: '2022.05.05'
+version: '2022.05.11'
 summary: cryptopro # 79 char long summary
 description: |
   cryptopro
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 icon: ./icon.png
-
+layout:
+  /etc/opt/cprocsp:
+    bind: $SNAP_DATA/etc/opt/cprocsp
+  /var/opt/cprocsp:
+    bind: $SNAP_DATA/var/opt/cprocsp
+  /opt/cprocsp:
+    bind: $SNAP/opt/cprocsp
 apps:    
   usbip-server:
     command: run.sh
@@ -25,10 +31,10 @@ parts:
     source: assets/
     plugin: dump
     stage-packages:
-      - lsb
-      - lsb-release
-      - lsb-base
-      - libxcb-xinerama0
+      # - lsb
+      # - lsb-release
+      # - lsb-base
+      # - libxcb-xinerama0
       - pcscd 
       - libccid 
       - gcr
